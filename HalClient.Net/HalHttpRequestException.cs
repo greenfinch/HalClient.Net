@@ -1,10 +1,11 @@
 using System;
 using System.Net;
+using System.Runtime.Serialization;
 using HalClient.Net.Parser;
 
 namespace HalClient.Net
 {
-	[Serializable]
+	[DataContract]
 	public class HalHttpRequestException : Exception
 	{
 		public HalHttpRequestException(HttpStatusCode statusCode, string reason, IRootResourceObject resource = null) 

@@ -65,7 +65,7 @@ namespace HalClient.Net.Parser
 			{
 				return new Uri(value, kind);
 			}
-			catch (UriFormatException)
+			catch (Exception)
 			{
 				return null;
 			}
